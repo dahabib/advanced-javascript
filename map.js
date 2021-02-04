@@ -21,3 +21,29 @@ const double = numbers.map(x => x * 2);
 
 
 console.log(double);
+
+// ================== Object ===================== //
+
+const students = [
+    {id: 11, name: 'Salman'},
+    {id: 22, name: 'Sadman'},
+    {id: 33, name: 'Happyman'},
+    {id: 44, name: 'Batman'},
+    {id: 55, name: 'Gentermen'}
+];
+
+// ===== using for loop ====
+
+const result = [];
+
+for (let i = 0; i < students.length; i++) {
+    const element = students[i];
+    const name = element.name;
+    result.push(name);
+}
+console.log(result);
+
+// ===== using map =======
+
+const studentName = students.map( student => student.name);
+console.log(studentName);
